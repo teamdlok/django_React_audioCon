@@ -14,9 +14,9 @@ export default class Homepage extends Component {
     render(){
         return (<Router>
             <Routes>
-                <Route path='' element={<h1>This is the homepage</h1>}></Route>
-                <Route path='/join' element={<RoomJoinPage />}></Route>
-                <Route path='/create' element={<CreateRoomPage />}></Route>
+                <Route exact path='' element={<h1>This is the homepage</h1>}></Route>
+                <Route path='/join' element={<RoomJoinPage/>}></Route>
+                <Route path='/create' element={<CreateRoomPage/>}></Route>
 
             </Routes>
         </Router>)
